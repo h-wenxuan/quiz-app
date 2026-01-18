@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Question TextView -->
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prof, what grade are we getting?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:padding="16dp"/>
+
+    <!-- User Score TextView -->
+    <TextView
+        android:id="@+id/textViewUserScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Score:"
+        android:textSize="16sp"
+        android:layout_below="@id/textViewQuestion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Options Layout -->
+    <LinearLayout
+        android:id="@+id/optionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUserScore"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Option A TextView -->
+        <TextView
+            android:id="@+id/textViewOptionA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option A: B"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Option B TextView -->
+        <TextView
+            android:id="@+id/textViewOptionB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option B: A"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Option C TextView -->
+        <TextView
+            android:id="@+id/textViewOptionC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option C: B"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Option D TextView -->
+        <TextView
+            android:id="@+id/textViewOptionD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option D: B"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <!-- Buttons Layout -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/optionsLayout"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Button 1 -->
+        <Button
+            android:id="@+id/buttonOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Button 2 -->
+        <Button
+            android:id="@+id/buttonOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Button 3 -->
+        <Button
+            android:id="@+id/buttonOption3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Button 4 -->
+        <Button
+            android:id="@+id/buttonOption4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D"/>
+
+    </LinearLayout>
+
+    <!-- WebView -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLayout"/>
+
+</RelativeLayout>
